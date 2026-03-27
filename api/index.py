@@ -6,16 +6,16 @@ import re
 from typing import Optional
 import json
  
-app = FastAPI()
+'''app = FastAPI()'''
 
 
-'''app = FastAPI(
+app = FastAPI(
     title="Google Stock Scraper API",
     description="Extrai dados de ações diretamente da pesquisa do Google",
     version="1.0.0",
     docs_url="/docs",
     redoc_url="/redoc",
-)'''
+)
  
 app.add_middleware(
     CORSMiddleware,
